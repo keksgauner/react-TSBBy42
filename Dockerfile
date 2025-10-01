@@ -39,7 +39,7 @@ WORKDIR /usr/share/nginx/html
 RUN rm -rf ./*
 
 # Copy config nginx
-COPY --from=build /app/.nginx/nginx.conf /etc/nginx/conf.d/default.conf
+COPY --from=builder /app/.nginx/nginx.conf /etc/nginx/conf.d/default.conf
 
 COPY --from=builder /app/public ./public
 

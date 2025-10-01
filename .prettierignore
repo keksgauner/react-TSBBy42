@@ -1,9 +1,23 @@
-node_modules
-dist
-build
-coverage
+# build output
 .next
 out
+build
+dist
+
+# dependencies
+node_modules
+
+# testing
+coverage
+
+# system files
+.DS_Store
+Thumbs.db
+
+# environment files
+*.env*
+
+# misc
 *.min.*
 package-lock.json
 pnpm-lock.yaml

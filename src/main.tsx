@@ -1,18 +1,21 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.sass'
-import {Provider} from "@/components/ui/provider.tsx";
-import {BrowserRouter, Route, Routes} from "react-router-dom";
+import { createRoot } from "react-dom/client";
+import "./index.sass";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Homepage from "@/pages/homepage";
+import { StrictMode } from "react";
+import { Provider } from "./components/ui/provider";
 
-createRoot(document.getElementById('root')!).render(
-  <StrictMode>
-      <Provider>
-        <BrowserRouter>
-          <Routes>
-            <Route path={"*"} element={<Homepage />} />
-          </Routes>
-        </BrowserRouter>
-      </Provider>
-  </StrictMode>,
-)
+const router = createBrowserRouter([
+    {
+        path: "/",
+        element: <Homepage />,
+    },
+]);
+
+createRoot(document.getElementById("root")!).render(
+    <StrictMode>
+        <Provider>
+            <RouterProvider router={router} />,
+        </Provider>
+    </StrictMode>,
+);

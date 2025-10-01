@@ -1,69 +1,38 @@
-# React + TypeScript + Vite
+# TSBBy42 – React singe page Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![Build](https://img.shields.io/github/actions/workflow/status/keksgauner/react-TSBBy42/build.yml?branch=master&label=Build&style=for-the-badge)](https://github.com/keksgauner/react-TSBBy42/actions)
+[![Release](https://img.shields.io/github/v/release/keksgauner/react-TSBBy42?label=Release&style=for-the-badge)](https://github.com/keksgauner/react-TSBBy42/releases)
+[![GitHub last commit](https://img.shields.io/github/last-commit/keksgauner/react-TSBBy42?style=for-the-badge)](https://github.com/keksgauner/react-TSBBy42/commits/)
+[![License](https://img.shields.io/github/license/keksgauner/react-TSBBy42?style=for-the-badge)](https://github.com/keksgauner/react-TSBBy42/blob/main/LICENSE)
 
-Currently, two official plugins are available:
+This is a example template app with [React](https://react.dev/) for proof on concept.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
 
-## Expanding the ESLint configuration
+**CodeBase:** [TypeScript](https://www.typescriptlang.org/) - _JavaScript with syntax for types_
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+**UI:**
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- [Chakra UI](https://chakra-ui.com/) - _UI Components_
+- [NextIntl](https://next-intl.dev/) - _Translations_
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Getting Started
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+First, run the development server:
+
+```bash
+pnpm dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Open [http://localhost:5173](http://localhost:5173) with your browser to see the result.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Contribution
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Please read through our [contribution guidelines](CONTRIBUTING.md) before starting a pull request. We welcome contributions of all kinds, not just code!
+
+## Further information
+
+Since it is still under **development**, you will have to look in `src` yourself to see what works, e.g., which paths exist.\
+You should know the **basics**, such as how to install [Node](https://nodejs.org/) and use the package manager `pnpm`.
+
+Happy Hacking ^^

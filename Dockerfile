@@ -41,11 +41,9 @@ RUN rm -rf ./*
 # Copy config nginx
 COPY --from=builder /app/.nginx/nginx.conf /etc/nginx/conf.d/default.conf
 
+# Copy files
 COPY --from=builder /app/public ./public
-
-# Automatically leverage output traces to reduce image size
-# https://nextjs.org/docs/advanced-features/output-file-tracing
-COPY --from=builder /app/build ./
+COPY --from=builder /app/dist ./
 
 EXPOSE 80
 

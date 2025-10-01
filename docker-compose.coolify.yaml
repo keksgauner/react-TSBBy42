@@ -5,12 +5,12 @@ services:
             dockerfile: Dockerfile
         image: tsbby42-app
         expose:
-            - "3000"
+            - "80"
         environment:
             - NODE_ENV=production
             - APP_URL=${APP_URL:?}
         healthcheck:
-            test: ["CMD", "wget", "--spider", "-q", "http://tsbby42-app:3000/"]
+            test: ["CMD", "wget", "--spider", "-q", "http://tsbby42-app:80/"]
             interval: 30s
             timeout: 10s
             retries: 3

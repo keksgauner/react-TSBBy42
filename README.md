@@ -1,6 +1,6 @@
 # TSBBy42 – React singe page Application
 
-[![Build](https://img.shields.io/github/actions/workflow/status/keksgauner/react-TSBBy42/build.yml?branch=master&label=Build&style=for-the-badge)](https://github.com/keksgauner/react-TSBBy42/actions)
+[![Build](https://img.shields.io/github/actions/workflow/status/keksgauner/react-TSBBy42/ci.yml?branch=master&label=Build&style=for-the-badge)](https://github.com/keksgauner/react-TSBBy42/actions)
 [![Release](https://img.shields.io/github/v/release/keksgauner/react-TSBBy42?label=Release&style=for-the-badge)](https://github.com/keksgauner/react-TSBBy42/releases)
 [![GitHub last commit](https://img.shields.io/github/last-commit/keksgauner/react-TSBBy42?style=for-the-badge)](https://github.com/keksgauner/react-TSBBy42/commits/)
 [![License](https://img.shields.io/github/license/keksgauner/react-TSBBy42?style=for-the-badge)](https://github.com/keksgauner/react-TSBBy42/blob/main/LICENSE)
